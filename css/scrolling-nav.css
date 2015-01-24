@@ -5,8 +5,101 @@
  */
 
 body {
+    font-family: helvetica, arial, sans-serif; 
     width: 100%;
     height: 100%;
+}
+
+a {
+    color: black;
+}
+
+
+a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.container {
+    overflow: hidden;
+    position: relative;
+}
+
+#chart,
+#chartOp svg {
+    width: 948px;
+    height:768px;
+    position: relative;
+}
+
+#chart rect.bar {
+    fill: #FF0000;
+}
+
+#chart rect.eu {
+    fill: url(#stripesPattern);
+}
+
+#chart text.label {
+    fill: #000000;  
+    cursor: pointer;    
+    font-weight: bold;  
+}
+
+#chart text.number {
+    fill: #777777;
+    cursor: pointer;    
+}
+
+#chart line {
+    stroke: #AAAAAA;
+    stroke-dasharray: 1 2;
+}
+
+#breadcrumbs {
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+#breadcrumbs a {
+    color: #AAAAAA;
+    display: block;
+    
+}
+
+#breadcrumbs a:hover {
+    color: #777777;
+    text-decoration: underline;
+}
+
+#chart g.in rect.bar {
+    fill: #d72335;
+}
+
+#chart g.in text.label {
+    fill: #d72335;
+}
+
+#chart g.in text.number {
+    fill: #d72335;
+}
+
+#chart g.in line {
+    stroke: #d72335;
+    stroke-dasharray: 2 2;
+}
+
+#chart g.out rect.bar {
+}
+
+#chart g.out text.label {
+}
+
+#chart g.out text.number {
+}
+
+#chart g.out line {
 }
 
 html {
@@ -41,35 +134,35 @@ of those sections to manage the look and feel of the site. */
 
 .about-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     text-align: center;
     background: #ddd;
 }
 
 .explore-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     text-align: center;
     background: #fff;
 }
 
 .costs-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     text-align: center;
     background: #ddd;
 }
 
 .research-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     text-align: center;
     background: #fff;
 }
 
 .sport-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     text-align: center;
     background: #ddd;
 }
