@@ -1,0 +1,142 @@
+/* -----------------------------------------------------------------------
+
+   Blueprint CSS Framework 0.7.1
+   http://blueprintcss.googlecode.com
+
+   * Copyright (c) 2007-2008. See LICENSE for more info.
+   * See README for instructions on how to use Blueprint.
+   * For credits and origins, see AUTHORS.
+   * This is a compressed file. See the sources in the 'src' directory.
+
+----------------------------------------------------------------------- */
+
+#chartbud,
+#chartbudOp svg {
+	width: 448px;
+	height:468px;
+	left: : 30px;
+	
+}
+
+#chartbud rect.bar {
+	fill: #FF0000;
+}
+
+#chartbud text.label {
+	fill: #000000;	
+	cursor: pointer;	
+	font-weight: bold;	
+}
+
+#chartbud text.number {
+	fill: #777777;
+	cursor: pointer;	
+}
+
+#chartbud line {
+	stroke: #AAAAAA;
+	stroke-dasharray: 1 2;
+}
+
+#breadcrumbsbud {
+	position: absolute;
+	top: 100px;
+	left: 20px;
+	text-align: left;
+}
+
+#breadcrumbsbud a {
+	color: #AAAAAA;
+	display: block;
+}
+
+#breadcrumbsbud a:hover {
+	color: #777777;
+	text-decoration: underline;
+}
+
+#chartbud g.in rect.bar {
+	fill: #d72335;
+}
+
+#chartbud g.in text.label {
+	fill: #d72335;
+}
+
+#chartbud g.in text.number {
+	fill: #d72335;
+}
+
+#chartbud g.in line {
+	stroke: #d72335;
+	stroke-dasharray: 2 2;
+}
+
+/* typography.css */
+
+.small {font-size:.8em;margin-bottom:1.875em;line-height:1.875em;}
+.large {font-size:1.2em;line-height:2.5em;margin-bottom:1.25em;}
+.hide {display:none;}
+.quiet {color:#666;}
+.loud {color:#000;}
+.highlight {background:#ff0;}
+.added {background:#060;color:#fff;}
+.removed {background:#900;color:#fff;}
+.first {margin-left:0;padding-left:0;}
+.last {margin-right:0;padding-right:0;}
+.top {margin-top:0;padding-top:0;}
+.bottom {margin-bottom:0;padding-bottom:0;}
+
+/* grid.css */
+.containerbud {width:670px;margin:0 auto; overflow: hidden; position: relative; font-size:95%; font-family: helvetica, arial, sans-serif; font-weight:normal;}
+.showgrid {background:url(src/grid.png);}
+div.span-1, div.span-2, div.span-3, div.span-4, div.span-5, div.span-6, div.span-7 {float:left;margin-right:10px;}
+div.last {margin-right:0;}
+.span-1 {width:30px;}
+.span-2 {width:20px;}
+.span-3 {width:50px;}
+.span-4 {width:50px;}
+.span-5 {width:50px;}
+.span-6 {width:50px;}
+.span-7 {width:50px;}
+.append-1 {padding-right:40px;}
+.append-2 {padding-right:20px;}
+.append-3 {padding-right:120px;}
+.append-4 {padding-right:160px;}
+.append-5 {padding-right:200px;}
+.append-6 {padding-right:240px;}
+.append-7 {padding-right:280px;}
+.prepend-1 {padding-left:40px;}
+.prepend-2 {padding-left:80px;}
+.prepend-3 {padding-left:120px;}
+.prepend-4 {padding-left:160px;}
+.prepend-5 {padding-left:200px;}
+.prepend-6 {padding-left:240px;}
+.prepend-7 {padding-left:280px;}
+div.border {padding-right:4px;margin-right:5px;border-right:1px solid #eee;}
+div.colborder {padding-right:24px;margin-right:25px;border-right:1px solid #eee;}
+.pull-1 {margin-left:-40px;}
+.pull-2 {margin-left:-80px;}
+.pull-3 {margin-left:-120px;}
+.pull-4 {margin-left:-160px;}
+.pull-5 {margin-left:-200px;}
+.pull-6 {margin-left:-240px;}
+.pull-7 {margin-left:-280px;}
+.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7 {float:left;position:relative;}
+.push-1 {margin:0 -40px 1.5em 40px;}
+.push-2 {margin:0 -80px 1.5em 80px;}
+.push-3 {margin:0 -120px 1.5em 120px;}
+.push-4 {margin:0 -160px 1.5em 160px;}
+.push-5 {margin:0 -200px 1.5em 200px;}
+.push-6 {margin:0 -240px 1.5em 240px;}
+.push-7 {margin:0 -280px 1.5em 280px;}
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7 {float:right;position:relative;}
+.box {padding:1.5em;margin-bottom:1.5em;background:#E5ECF9;}
+hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:.1em;margin:0 0 1.45em;border:none;}
+hr.space {background:#fff;color:#fff;}
+.clearfix:after, .containerbud:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix, .container {display:inline-block;}
+* html .clearfix, * html .containerbud {height:100%;}
+.clearfix, .containerbud {display:block;}
+.clear {clear:both;}
+

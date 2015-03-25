@@ -1,0 +1,61 @@
+"id";"parent";"level";"type";"name";"part";"v_total";
+"total";"";"a";"SUMA“;“A“;0;950;
+"1";"";"b";"FUNKCJA 1“;Wohnen;““;250;950;
+"1-1";"1";"c";"Zadanie 1.1“;Mietkosten;““;200;250
+"1-1-1";"1-1";"d";"Podzadanie 1.1.1“;Kaltmiete;““;150;250;
+"1-1-2";"1-1";"d";"Podzadanie 1.1.2“;Nebenkosten;““;50; 250;
+"1-2";"1";"c";"Zadanie 1.2“;Haushaltsmittel;““;50;250;
+"1-2-1";"1-2";"d";"Podzadanie 1.2.1“;Putzmittel und Drogerie;““;25;50;
+"1-2-2";"1-2";"d";"Podzadanie 1.2.2“;Kleinkram;““;25;50;
+
+"2";"";"b";"FUNKCJA 2“;Studium;““;90;950;
+"2-1";"2";"c";"Zadanie 2.1“;Studiengebühren (anteilig im Monat);““;41;90;
+"2-1-1";"2-1";"d";"Podzadanie 2.1.1“;Semesterticket;““;21;41;
+"2-1-2";"2-1";"d";"Podzadanie 2.1.2“;Sonstiges;““;20;41;
+"2-2";"2";"c";"Zadanie 2.2“;Unimaterial;““;49;90;
+"2-2-1";"2-2";"d";“Podzadanie 2.2.1“;Bücher;““;20;49;
+"2-2-2";"2-2";"d";“Podzadanie 2.2.2“;Kopien;““;20;49;
+"2-2-3";"2-2";"d";"Podzadanie 2.2.3“;Sonstiges;““;9;49;
+
+"3";"";"b";"FUNKCJA 3“;Leben;““;200;950;
+"3-1";"3";"c";"Zadanie 3.1“;Freizeit;““;120;200;
+"3-1-1";"3-1";"d";"Podzadanie 3.1.1“;Essen gehen;““;45;120;
+"3-1-2";"3-1";"d";"Podzadanie 3.1.2“;Feiern gehen;““;20;120;
+"3-1-3";"3-1";"d";"Podzadanie 3.1.3“;Trinken gehen;““;30;120;
+"3-1-4";"3-1";"d";"Podzadanie 3.1.4“;Sonstiges;““;25;120;
+"3-2";"3";"c";"Zadanie 3.2“;Kultur;““;40;200;
+"3-2-1";"3-2";"d";"Podzadanie 3.2.1“;Museum;““;10;40;
+"3-2-2";"3-2";"d";"Podzadanie 3.2.2“;Reisen;““;30;40;
+"3-3";"3";"c";"Zadanie 3.3“;Sport;““;40;200;
+"3-3-1";"3-3";"d";"Podzadanie 3.3.1“;Fitnessstudio;““;20;40;
+"3-3-2";"3-3";"d";"Podzadanie 3.3.2“;Radfahren;““;20;40;
+
+"4";"";"b";"FUNKCJA 4“;Ernährung;““;150;950;
+"4-1";"4";"c";"Zadanie 4.1“;Lebensmittel;““;100;150;
+"4-1-1";"4-1";"d";"Podzadanie 4.1.1“;Obst;““;25;100;
+"4-1-2";"4-1";"d";"Podzadanie 4.1.2“;Gemüse;““;25;100;
+"4-1-3";"4-1";"d";"Podzadanie 4.1.3“;Fleisch;““;20;100;
+"4-1-4";"4-1";“d“;“Podzadanie 4.1.4“;Fisch;““;15;100;
+"4-1-5";"4-1";“d“;“Podzadanie 4.1.5“;Süßigkeiten;““;5;100;
+"4-1-6";"4-1";“d“;“Podzadanie 4.1.6“;Backwaren;““;10;100;
+"4-2";"4";"c";"Zadanie 4.2“;Getränke;““;50;150;
+"4-2-1";"4-2";"d";"Podzadanie 4.2.1“;alkoholisch;““;15;50;
+"4-2-2";"4-2";"d";"Podzadanie 4.2.2“;nicht alkoholisch;““;35;50;
+
+"5";"";"b";"FUNKCJA 5“;Gesundheit;““;120;950;
+"5-1";"5";"c";"Zadanie 5.1“;Krankenversicherung;““;102;120;
+"5-2";"5";"c";"Zadanie 5.2“;Medikamente;““;10;120;
+"5-3";"5";"c";"Zadanie 5.3“;Sonstiges;““;8;120;
+
+"6";"";"b";"FUNKCJA 6“;Konsum;““;80;950;
+"6-1";"6";"c";"Zadanie 6.1“;Kleidung;““;50;80;
+"6-1-1";"6-1";"d";"Podzadanie 6.1.1“;Schuhe;““;10;80;
+"6-1-2";"6-1";"d";"Podzadanie 6.1.2“;Accessoires;““;5;80;
+"6-1-3";"6-1";"d";"Podzadanie 6.1.3“;Unterkleidung;““;20;80;
+"6-1-4";"6-1";"d";"Podzadanie 6.1.4“;Oberkleidung;““;15;80;
+"6-2";"6";"c";"Zadanie 6.2“;Drogerieartikel;““;20;80;
+"6-2";"6";"c";"Zadanie 6.3“;Hobby;““;10;80;
+
+"7";"";"b";"FUNKCJA 7“;SONSTIGES;““;60;950;
+"7-1";"7";"c";"Zadanie 7.1“;Sparbuch;““;40;60;
+"7-2";"7";"c";“Zadanie 7.2“;Ratenzahlung;““;20;60;
