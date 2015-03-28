@@ -1,0 +1,28 @@
+.chartbar .legend {
+  fill: black;
+  font: 14px sans-serif;
+  text-anchor: start;
+  font-size: 12px;
+}
+
+.chartbar text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+.chartbar .labelbar {
+  fill: black;
+  font: 14px sans-serif;
+  text-anchor: end;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
