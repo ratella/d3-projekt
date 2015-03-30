@@ -87,7 +87,7 @@
 .bottom {margin-bottom:0;padding-bottom:0;}
 
 /* grid.css */
-.containerbud {width:1970px;margin:0 auto; overflow: hidden; position: relative; font-size:95%; font-family: helvetica, arial, sans-serif; font-weight:normal;}
+.containerbud {margin:0 auto; overflow: hidden; position: relative; font-size:95%; font-family: helvetica, arial, sans-serif; font-weight:normal;}
 .append-1 {padding-right:40px;}
 .append-2 {padding-right:20px;}
 .append-3 {padding-right:120px;}
@@ -95,13 +95,6 @@
 .append-5 {padding-right:200px;}
 .append-6 {padding-right:240px;}
 .append-7 {padding-right:280px;}
-.prepend-1 {padding-left:40px;}
-.prepend-2 {padding-left:80px;}
-.prepend-3 {padding-left:120px;}
-.prepend-4 {padding-left:160px;}
-.prepend-5 {padding-left:200px;}
-.prepend-6 {padding-left:240px;}
-.prepend-7 {padding-left:280px;}
 div.border {padding-right:4px;margin-right:5px;border-right:1px solid #eee;}
 div.colborder {padding-right:24px;margin-right:25px;border-right:1px solid #eee;}
 .pull-1 {margin-left:-40px;}
