@@ -14,7 +14,7 @@
 #chartbudOp svg {
 	width: 448px;
 	height:468px;
-
+	left: : 30px;
 	
 }
 
@@ -42,7 +42,7 @@
 	position: absolute;
 	top: 100px;
 	left: 20px;
-	text-align: center;
+	text-align: left;
 }
 
 #breadcrumbsbud a {
@@ -87,17 +87,7 @@
 .bottom {margin-bottom:0;padding-bottom:0;}
 
 /* grid.css */
-.containerbud {width:990px;margin:0 auto; overflow: hidden; position: relative; font-size:95%; font-family: helvetica, arial, sans-serif; font-weight:normal;}
-.showgrid {background:url(src/grid.png);}
-div.span-1, div.span-2, div.span-3, div.span-4, div.span-5, div.span-6, div.span-7 {float:left;margin-right:10px;}
-div.last {margin-right:0;}
-.span-1 {width:30px;}
-.span-2 {width:20px;}
-.span-3 {width:50px;}
-.span-4 {width:50px;}
-.span-5 {width:50px;}
-.span-6 {width:50px;}
-.span-7 {width:50px;}
+.containerbud {width:1970px;margin:0 auto; overflow: hidden; position: relative; font-size:95%; font-family: helvetica, arial, sans-serif; font-weight:normal;}
 .append-1 {padding-right:40px;}
 .append-2 {padding-right:20px;}
 .append-3 {padding-right:120px;}
@@ -127,15 +117,8 @@ div.colborder {padding-right:24px;margin-right:25px;border-right:1px solid #eee;
 .push-3 {margin:0 -120px 1.5em 120px;}
 .push-4 {margin:0 -160px 1.5em 160px;}
 .push-5 {margin:0 -200px 1.5em 200px;}
-.push-6 {margin:0 -160px 1.5em 240px;}
+.push-6 {margin:0 -240px 1.5em 240px;}
 .push-7 {margin:0 -280px 1.5em 280px;}
 .push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7 {float:right;position:relative;}
-.box {padding:1.5em;margin-bottom:1.5em;background:#E5ECF9;}
-hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:.1em;margin:0 0 1.45em;border:none;}
-hr.space {background:#fff;color:#fff;}
-.clearfix:after, .containerbud:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
-.clearfix, .container {display:inline-block;}
-* html .clearfix, * html .containerbud {height:100%;}
-.clearfix, .containerbud {display:block;}
-.clear {clear:both;}
+
 
