@@ -148,6 +148,12 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 
+.costs-section {
+    height: 15%;
+    padding-top: 90px;
+    background: #fff;
+}
+
 .research-section {
     height: 15%;
     padding-top: 90px;
