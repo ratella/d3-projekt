@@ -1,0 +1,122 @@
+{
+ "name": "Getränke",
+ "children": [
+  {
+   "name": "alkoholisch",
+   "children": [
+    {"name": "Kaltgetränke", 
+	"children": [
+	  {
+     "name": "Bier",
+     "children": [
+      {"name": "Kölsch", "size": 5},
+      {"name": "Pils", "size": 5},
+      {"name": "Hefeweizen", "size": 1},
+	    {"name": "Radler", "size": 1}
+     ]
+    },
+    {
+     "name": "Wein",
+     "children": [
+      {"name": "Weißwein", "size": 1},
+      {"name": "Rotwein", "size": 1},
+      {"name": "Rosewein", "size": 0}
+     ]
+    },
+     {
+     "name": "Spirituosen",
+     "children": [
+       {"name": "Branntwein", "size": 0},
+        {"name": "Obstbrand", "size": 0},
+        {"name": "Getreidebrand", "size": 0},
+        {"name": "Brände", "size": 0}
+     ]
+    },
+    {
+     "name": "Andere", "size": 0
+    }
+	]
+	},
+    {"name": "Warmgetränke", 
+    "children": [
+      {"name": "Glühwein", "size": 0},
+      {"name": "Irish Coffee", "size": 1}
+    ]
+  }
+   ]
+  },
+  {
+   "name": "alkoholfrei",
+   "children": [
+    {
+     "name": "Warmgetränke",
+     "children": [
+      {"name": "Tee", "size": 10},
+      {"name": "Milch", "size": 0},
+      {"name": "Kakao", "size": 1},
+      {"name": "Kaffee", "size": 3}
+     ]
+    },
+    {
+     "name": "Milchbasis",
+     "children": [
+      {"name": "Milch", "size": 3},
+      {"name": "Kakao", "size": 1},
+      {"name": "Buttermilch", "size": 1},
+      {"name": "Milchshake", "size": 0}
+     ]
+    },
+    {
+     "name": "Kaltgetränke",
+     "children": [
+      {
+       "name": "Wasser",
+       "children": [
+        {"name": "Mineralwasser", "size": 18},
+        {"name": "Stilles Wasser", "size": 22},
+        {"name": "Heilwasser", "size": 5},
+        {"name": "aromatisiertes", "size": 3}
+       ]
+      },
+      {
+       "name": "Limonade",
+       "children": [
+        {"name": "Cola", "size": 1},
+        {"name": "Fanta", "size": 1},
+        {"name": "Sprite", "size": 1}
+       ]
+      },
+      {
+       "name": "Teeähnlich",
+       "children": [
+        {"name": "Eistee", "size": 2},
+        {"name": "Früchtetee", "size": 10},
+        {"name": "Kräutertee", "size": 5}
+       ]
+      },
+      {
+	  "name": "Mischgetränke",
+	  "children": [
+		{"name": "Spezi", "size": 1},
+		{"name": "KiBa", "size": 0}
+		]
+		},
+      {
+       "name": "Fruchtgetränke",
+       "children": [
+        {"name": "Fruchtsaft", "size": 1},
+        {"name": "Fruchtnektar", "size": 0},
+        {"name": "Smoothies", "size": 1}
+       ]
+      },
+      {"name": "Isotonische", 
+      "children": [
+            {"name": "Apfelschorle", "size": 15}
+      ]
+       }
+     ]
+    }
+   ]
+  }
+ ]
+}
