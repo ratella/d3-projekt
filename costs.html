@@ -12,19 +12,16 @@
 
     <title>Codename Brasilianischer Sportstudent</title>
 
-    <!-- Reisedaten Dateieinbindungen-->
+    <!-- JS Dateieinbindungen-->
     <script type="text/javascript" src="js/d3/d3.js"></script>
-    <script type="text/javascript" src="js/d3/d3.csv.js"></script>
-    <script type="text/javascript" src="js/d3/d3.geo.js"></script>
-    <script type="text/javascript" src="js/d3/d3.geom.js"></script>
     <script type="text/javascript" src="js/d3/geom.js"></script>
     <script type="text/javascript" src="js/d3/d3.min.js"></script>
-    <script type="text/javascript" src="js/d3/d3.layout.js"></script>
-    <script type="text/javascript" src="js/d3/d3.layout.min.js"></script>
-    <script type="text/javascript" src="js/d3.v3.min.js"></script>
+      <!--<script type="text/javascript" src="js/d3/d3.layout.js"></script>
+  <script type="text/javascript" src="js/d3/d3.layout.min.js"></script>-->
     <script type="text/javascript" src="js/domext.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/dataarray.js"></script>
+     <script type="text/javascript" src="js/d3.v3.min.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -32,8 +29,11 @@
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
 
+    <!-- CSS bitte hier einfügen-->
     <!-- Budget CSS-->
     <link href="css/screen.css" rel="stylesheet">
+    <link href="css/sunburst.css" rel="stylesheet">
+    
 
 </head>
 
@@ -84,373 +84,109 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Costs Section -->
-    <section id="costs" class="costs-section">
+        <!-- Research Section -->
+    <section id="research" class="research-section">
         <div class="container">
             <div class="row">
-                 <h1>Life and its Costs Section</h1>
-                <div class="col-lg-6">
+                <div class="col-lg-12">
+                    <h1>Life and its Costs</h1><br>
+                    
+                         <script>
 
-                                <div class="containerbud">  
-                                    <div class="span-24 last">           
-                                        <h3><a href="#costs">Monatliches Budget 950€</a></h3> 
-                                        <p>Monatliche Ausgabenübersicht</p>            
-                                        <div id="chartbudContainerbud">
-                                        </div>
-                                        <div id="breadcrumbsbud">
-                                        </div>
-                                        <script type="text/javascript"> 
-                                            var entryIdMap = {};
-                                            var entries = new DataArray();
-                                            var budget = { name: "zur Gesamtübersicht", entries:[] }; 
-                                            var selectedCategory; 
-                                            var chartbud;  
-                                            var w = 25;
-                                            var h = 10;                     
-                                            
-                                            var historyStack = [];
-                                            
-                                            function rebuildBreadcrumbsbud() {
-                                                var breadcrumbsbud = d3.select("#breadcrumbsbud");    
-                                                var breadcrumbsbudLinks = breadcrumbsbud.selectAll("a")
-                                                    .data(historyStack);
-                                                    
-                                                breadcrumbsbudLinks.enter()
-                                                    .append("a")
-                                                    .attr("href", function(d, i) {
-                                                        return "javascript:goToBreadcrumb(" + i + ")";
-                                                    })
-                                                    .text(function(d) { return d.name + ""; })
-                                                    
-                                                breadcrumbsbudLinks.exit()
-                                                    .remove("")
-                                            }
-                                            
-                                            function goToBreadcrumb(i) {
-                                                var clicked = historyStack[i];               
-                                                historyStack.splice(i, historyStack.length - i);
-                                                rebuildBreadcrumbsbud();
-                                                chartbud.selectAll("g").remove();
-                                                rebuildVis(clicked);
-                                            }
+var width = 1860,
+    height = 800,
+    radius = Math.min(width, height) / 3;
+
+var x = d3.scale.linear()
+    .range([0, 2 * Math.PI]);
+
+var y = d3.scale.linear()
+    .range([0, radius]);
+
+var color = d3.scale.category20c();
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+  .append("g")
+    .attr("transform", "translate(" + width / 2 + "," + (height / 2.5 ) + ")");
+
+var partition = d3.layout.partition()
+    .value(function(d) { return d.size; });
+
+var arc = d3.svg.arc()
+    .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
+    .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
+    .innerRadius(function(d) { return Math.max(0, y(d.y)); })
+    .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); });
+
+d3.json("json/flare.json", function(error, root) {
+  var g = svg.selectAll("g")
+      .data(partition.nodes(root))
+    .enter().append("g");
+
+  var path= g.append("path")
+    .attr("d", arc)
+    .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
+    .on("click", click);
+
+  var text = g.append("text")
+    .attr("transform", function(d) { return "rotate(" + computeTextRotation(d) + ")"; })
+    .attr("x", function(d) { return y(d.y); })
+    .attr("dx", "3") // margin
+    .attr("dy", "0") // vertical-align
+    .text(function(d) { return d.name; });
+
+  function click(d) {
+    // fade out all text elements
+    text.transition().attr("opacity", 0);
+
+    path.transition()
+      .duration(750)
+      .attrTween("d", arcTween(d))
+      .each("end", function(e, i) {
+          // check if the animated element's data e lies within the visible angle span given in d
+          if (e.x >= d.x && e.x < (d.x + d.dx)) {
+            // get a selection of the associated text element
+            var arcText = d3.select(this.parentNode).select("text");
+            // fade in the text element and recalculate positions
+            arcText.transition().duration(750)
+              .attr("opacity", 1)
+              .attr("transform", function() { return "rotate(" + computeTextRotation(e) + ")" })
+              .attr("x", function(d) { return y(d.y); });
+          }
+      });
+  }
+});
+
+d3.select(self.frameElement).style("height", height + "px");
+
+// Interpolate the scales!
+function arcTween(d) {
+  var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
+      yd = d3.interpolate(y.domain(), [d.y, 1]),
+      yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
+  return function(d, i) {
+    return i
+        ? function(t) { return arc(d); }
+        : function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); return arc(d); };
+  };
+}
+
+function computeTextRotation(d) {
+  return (x(d.x + d.dx / 2) - Math.PI / 2) / Math.PI * 180;
+}
+
+</script>
+                         
+
                                     
-                                            function findMinScaleAndPad(n) { 
-                                                if (n == 0) return 0;
-                                                
-                                                var scale = 1;
-                                                var result = 0;
-                                                
-                                                while(result == 0 && scale < 1000) {
-                                                    scale *= 10;
-                                                    result = Math.floor(n);
-                                                }
-                                                
-                                                var scaleStr = "" + scale;
-                                                var resultStr = "" + result;
-                                                while(resultStr.length < scaleStr.length - 1) {
-                                                    resultStr = "0" + resultStr;
-                                                }
-                                                return resultStr;
-                                            } 
-                                            
-                                            function numberToAmountStr(n) { 
-                                                var normalized = 1*n;
-                                                var eu = Math.floor(normalized);
-                                                var gr = findMinScaleAndPad(normalized);
-                                                if (gr == 0) {
-                                                    gr = Math.floor((normalized)*1000);
-                                                }
-                                                var result = "";
-                                                if (eu > 0) {
-                                                    result 
-                                                }
-                                                else {
-                                                    result 
-                                                }
-                                                
-                                                if (gr > 0) {
-                                                    result += gr;
-                                                }
-                                                else {
-                                                    result //Zahl unter Kategorie             
-                                                }
-                                                
-                                                return result + " €"; 
-                                            }
-                                            
-                                            function init() {  
-                                                chartbud = d3.select("#chartbudContainerbud").append("svg:svg");    
-                                                var chartbudDefs = chartbud.append("svg:defs"); 
-                                                var pattern = chartbudDefs.append("svg:pattern");
-                                                pattern.attr("patternUnits", "userSpaceOnUse");
-                                                pattern.attr("x", "0");             
-                                                pattern.attr("y", "0");
-                                                pattern.attr("width", "5");
-                                                pattern.attr("height", "5");
-                                                pattern.attr("id", "stripesPattern");
-                                                var patternPath = pattern.append("svg:path");
-                                                patternPath.attr("d", "M 0,0 0,1 1,1 1,0 0,0 z M 1,1 1,2 2,2 2,1 1,1 z M 2,2 2,3 3,3 3,2 2,2 z M 3,3 3,4 4,4 4,3 3,3 z m 1,1 0,1.0000001 1,0 L 5,4 4,4 z");
-                                                patternPath.attr("style", "fill:#000000;fill-opacity:1;stroke:none");
-                                                chartbud.attr("id", "chartbud");
-                                                d3.xhr("data/unterteilung_ausgaben.csv", function(text) {  //Die UNterteilung
-                                                    var lines = text.responseText.split("\n");
-                                                    for(var i in lines) {
-                                                        var line = lines[i].replace(/"/g, '');  
-                                                        if (!line) continue;   
-                                                        if (i==0) continue;  //header
-                                                        if (i==1) continue;  //total
-                                                        var params = line.split(";");   
-                                                                                
-                                                        var entry = {     
-                                                            id: params[0],
-                                                            parent: params[1],
-                                                            level: params[2],
-                                                            name: params[4],
-                                                            part: params[5],
-                                                            v_total: Number(params[6]), 
-                                                            entries: []                     
-                                                        }      
-                                                    
-                                                        entries.add(entry);            
-                                                        
-                                                        entryIdMap[entry.id] = entry;
-                                                        if (entry.parent) {
-                                                            entryIdMap[entry.parent].entries.push(entry);
-                                                        }   
-                                                        else {
-                                                            budget.entries.push(entry);
-                                                        }                   
-                                                    }     
-                                                
-                                                    rebuildVis(budget);
-                                                    
-                                                });        
-                                            }   
-                                            
-                                            function rebuildVis(parent) {
-                                                historyStack.push(parent);
-                                                rebuildBreadcrumbsbud();
-                                                
-                                                var total = 0; 
-                                                parent.entries.forEach(function(funkcja) {    
-                                                    total += funkcja.v_total;
-                                                });
-                                            
-                                                var totalWidth = 448; //Breite des Diagrammes
-                                                var minWidth = 12;  
-                                                var reminingWidth = totalWidth - parent.entries.length * minWidth - parent.entries.length;
-                                                var dx = 0;
-                                                var i = 0;
-                                                var barsDy = 140;
-                                                
-                                                var barGroup = chartbud.selectAll("rect.active")
-                                                    .data(parent.entries)
-                                                    .enter().append("svg:g")
-                                                    .attr("transform", "translate(0, " + barsDy + ")");
-                                                                
-                                                barGroup.append("svg:rect")
-                                                    .attr("width", function(d) {
-                                                        var w = minWidth + Math.round(reminingWidth * d.v_total / total);                           
-                                                        d.dx = dx;  
-                                                        d.barWidth = w;                 
-                                                        dx += w + 1;
-                                                        return w + "px"
-                                                    })
-                                                    .attr("height", "130px") //HÖHE
-                                                    .attr("x", function(d) {                            
-                                                        return d.dx + "px";
-                                                    })
-                                                    .attr("y", 0)
-                                                    .attr("rx", 5)
-                                                    .attr("ry", 5)                      
-                                                    .attr("class", "bar active");
-                                                
-                                                dx = 0; 
-                                                barGroup.append("svg:rect")
-                                                    .attr("width", function(d) {
-                                                        var w = minWidth + Math.round(reminingWidth * d.v_total / total);                           
-                                                        d.dx = dx;                      
-                                                        dx += w + 1;
-                                                        return w + "px"
-                                                    })
-                                                    .attr("height", function(d) { return (256 * (1.0 - d.v_proce_nation/100)) + "px"; } )
-                                                    .attr("x", function(d) {                            
-                                                        return d.dx + "px";
-                                                    })
-                                                    .attr("y", 0)
-                                                    .attr("rx", 5)
-                                                    .attr("ry", 5)                      
-                                                    .attr("class", "eu")
-                                                    .style("fill-opacity", 0)
-                                                    .transition().delay(100).duration(1000)
-                                                        .style("fill-opacity", 1)
-                                                    
-                                                barGroup.on('click', function(d, i) {
-                                                        if (d.type == "Wurzel") {
-                                                            d3.select(this.childNodes[0])
-                                                                .style("fill-opacity", 0.25)
-                                                                .transition()
-                                                                    .style("fill-opacity", 1.0)
-                                                            return;
-                                                        }
-                                                        var groups = chartbud.selectAll("g");                                           
-                                                        var clicked = this;                                             
-                                                        var clickedGroupIndex = groups[0].indexOf(clicked);
-                                                        chartbud.selectAll("rect.active").transition()                              
-                                                            .duration(750)
-                                                            .delay(function() { return (this == clicked.childNodes[0]) ? 50 : 0})
-                                                            .attr("x", function(d, i) { return (i <= clickedGroupIndex ? 0 : totalWidth) + "px";})
-                                                            .attr("width", function() { return (this == clicked.childNodes[0]) ? (totalWidth) + "px" : "0px"})
-                                                        chartbud.selectAll("rect.eu").transition()                              
-                                                            .duration(750)
-                                                            .delay(function() { return (this == clicked.childNodes[1]) ? 50 : 0})
-                                                            .attr("x", function(d, i) { return (i <= clickedGroupIndex ? 0 : totalWidth) + "px";})
-                                                            .attr("width", function() { return (this == clicked.childNodes[1]) ? (totalWidth) + "px" : "0px"})
-                                                            .each("end", function(d) {
-                                                                chartbud.selectAll("rect.active")
-                                                                    .attr("class", "bar");                                  
-                                                                if (this != clicked.childNodes[1]) {
-                                                                    d3.select(this.parentNode).remove();
-                                                                }
-                                                                else {                                  
-                                                                    d3.select(this.parentNode.childNodes[0]).transition()
-                                                                        .style("fill-opacity", 0);
-                                                                    d3.select(this.parentNode.childNodes[1]).transition()
-                                                                        .style("fill-opacity", 0)
-                                                                        .each("end", function() {
-                                                                            d3.select(this.parentNode).remove();
-                                                                        })
-                                                                    rebuildVis(d);
-                                                                }                                                           
-                                                            })
-                                                        chartbud.selectAll("text").transition()
-                                                            .style("fill-opacity", 0)
-                                                        chartbud.selectAll("line").transition()
-                                                            .style("stroke-opacity", 0)
-                                                });
-                                                
-                                                barGroup.on('mouseover', function(d, i) {
-                                                    var selected = this;
-                                                    var groups = chartbud.selectAll("g");
-                                                    groups.attr("class", function() {
-                                                        return (this == selected) ? "in" : "out";
-                                                    });
-                                                    
-                                                    var title = d3.select(selected.childNodes[2]);
-                                                });
-                                                
-                                                barGroup.on('mouseout', function(d, i) {
-                                                    var groups = chartbud.selectAll("g");
-                                                    groups.attr("class", "");
-                                                });
-                                                
-                                                var itemMarginX = 40;
-                                                var levelHeight = 50;               
-                                                var levelsAbove = [{y:-40, items:[]}];
-                                                var levelsBelow = [{y:285, items:[]}];
-                                                
-                                                function findNextTitleSpace(startX, endX, width, above) {
-                                                    var levels = above ? levelsAbove : levelsBelow;
-                                                    var ydirection = above ? -1 : 1;
-                                                    var result = {x: 2000, y: 0};
-                                                    var minX = Math.min(startX, totalWidth - width);
-                                                    var maxX = Math.min(endX + width/2 - 5, totalWidth - width);
-                                                    var found = false;
-                                                    for(var l=0; l<levels.length; l++) {
-                                                        var level = levels[l];
-                                                        var currX = 0;                  
-                                                        for(var i=0; i<level.items.length; i++) {
-                                                            var item = level.items[i];
-                                                            currX = item.x + item.width + itemMarginX;
-                                                            if (currX < minX) currX = minX;
-                                                            if (currX >= minX && currX <= maxX) {
-                                                                if (i < level.items.length - 1 && currX + width < level.items[i+1].x - itemMarginX) {
-                                                                    result.x = currX;
-                                                                    level.items.push({x:result.x, width:width})
-                                                                    found = true;
-                                                                }
-                                                            }
-                                                        }
-                                                                            
-                                                        if (!found && currX < maxX) {
-                                                            result.x = Math.max(minX, currX);
-                                                            level.items.push({x:result.x, width:width})
-                                                            found = true;
-                                                        }
-                                                        
-                                                        if (found) {
-                                                            result.y = level.y;
-                                                            break;
-                                                        }
-                                                        else {
-                                                            //add new level if we reached the last one
-                                                            if (l == levels.length - 1 && levels.length < 10) {
-                                                                levels.push({y:level.y + ydirection * levelHeight, items:[]});
-                                                            }
-                                                        }
-                                                    }
-                                                    return result;
-                                                }
-                                            
-                                                var titleBelowAbove = -10;
-                                                var titleBelowDy = 280;
-                                                barGroup.append("svg:text") 
-                                                    .text(function(d) {return d.name.replace(" ", " ")})
-                                                    .attr("class", "label")                 
-                                                    .attr("y", function(d, i) {
-                                                        var center = d.dx + d.barWidth/2;
-                                                        var above = (i % 2 == 0);
-                                                        d.linePos = [];
-                                                        d.linePos.push({x:center.x, y: above ? -2 : 200});
-                                                        var width = this.offsetWidth ? this.offsetWidth : this.getClientRects()[0].width;
-                                                        d.titlePos = findNextTitleSpace(center - d.barWidth/2, center - width/2 + 5, width, above);
-                                                        d.linePos.push({x:center.x, y: above ? d.titlePos.y + 16 : d.titlePos.y - 12});
-                                                        return d.titlePos.y;                        
-                                                    })
-                                                    .attr("x", function(d, i) {
-                                                        return d.titlePos.x;
-                                                    })
-                                                    .style("fill-opacity", 0)
-                                                    .transition()
-                                                        .style("fill-opacity", 1);
-                                                
-                                                barGroup.append("svg:text") 
-                                                    .text(function(d) {
-                                                        return numberToAmountStr(d.v_total);
-                                                    })
-                                                    .attr("class", "number")                    
-                                                    .attr("y", function(d, i) {
-                                                        return d.titlePos.y + 12;
-                                                    })
-                                                    .attr("x", function(d, i) {
-                                                        return d.titlePos.x;
-                                                    })
-                                                    .style("fill-opacity", 0)
-                                                    .transition()
-                                                        .style("fill-opacity", 1);
-                                                    
-                                                barGroup.append("svg:line")
-                                                    .attr("x1", function(d) { return Math.floor(Math.max(d.dx, d.titlePos.x)) + 5.5; })
-                                                    .attr("x2", function(d) { return Math.floor(Math.max(d.dx, d.titlePos.x)) + 5.5; })
-                                                    .attr("y1", function(d) { return d.linePos[0].y; })
-                                                    .attr("y2", function(d) { return d.linePos[1].y; })
-                                                    .style("stroke-opacity", 0)
-                                                    .transition()
-                                                        .style("stroke-opacity", 1)
-                                                
-                                            }
-                                            
-                                            window.onload = init;
-                                        
-                                        </script>  
 
-                                    </div> 
-                                </div>
-
-            </div>           
-         </div>
+                 </div>
+            </div>
         </div>
     </section>
+
 	
 
     <!-- jQuery -->
