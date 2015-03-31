@@ -1,0 +1,330 @@
+[{
+	"nodes" : [{
+			"name" : "Anna Blair",
+			"age" : 33,
+			"commoninterest" : "Reisen"
+		}, {
+			"name" : "Cleo Bright",
+			"age" : 26,
+			"commoninterest" : "Rennrad"
+		}, {
+			"name" : "Jewell Brock",
+			"age" : 30,
+			"commoninterest" : "Germanistik"
+		}, {
+			"name" : "Grant Drake",
+			"age" : 18,
+			"commoninterest" : "Portugisisch"
+		}, {
+			"name" : "Nash Todd",
+			"age" : 18,
+			"commoninterest" : "Party"
+		}, {
+			"name" : "Hayden Lynn",
+			"age" : 33,
+			"commoninterest" : "Reisen"
+		}, {
+			"name" : "Lucinda Campbell",
+			"age" : 18,
+			"commoninterest" : "Reisen"
+		}, {
+			"name" : "David Sharpe",
+			"age" : 18,
+			"commoninterest" : "BWL"
+		}, {
+			"name" : "Gordon Rojas",
+			"age" : 21,
+			"commoninterest" : "Portugisisch"
+		}, {
+			"name" : "Hattie Chase",
+			"age" : 37,
+			"commoninterest" : "Portugisisch"
+		}, {
+			"name" : "Sims Dominguez",
+			"age" : 20,
+			"commoninterest" : "Germanistik"
+		}, {
+			"name" : "Kim Villarreal",
+			"age" : 26,
+			"commoninterest" : "Germanistik"
+		}, {
+			"name" : "Marquez Garrett",
+			"age" : 25,
+			"commoninterest" : "Portugisisch"
+		}, {
+			"name" : "Shaw Hodges",
+			"age" : 31,
+			"commoninterest" : "Germanistik"
+		}, {
+			"name" : "Cummings Grant",
+			"age" : 24,
+			"commoninterest" : "Germanistik"
+		}, {
+			"name" : "James Sargent",
+			"age" : 37,
+			"commoninterest" : "BWL"
+		}, {
+			"name" : "Molina Kirk",
+			"age" : 21,
+			"commoninterest" : "Reisen"
+		}, {
+			"name" : "Ola Cote",
+			"age" : 38,
+			"commoninterest" : "Party"
+		}, {
+			"name" : "Dyer Tillman",
+			"age" : 21,
+			"commoninterest" : "Germanistik"
+		}, {
+			"name" : "Vicki Rivas",
+			"age" : 27,
+			"commoninterest" : "Reisen"
+		}, {
+			"name" : "Lauri Lang",
+			"age" : 35,
+			"commoninterest" : "Sport"
+		}, {
+			"name" : "Sue Buckley",
+			"age" : 32,
+			"commoninterest" : "BWL"
+		}, {
+			"name" : "Jana Mays",
+			"age" : 28,
+			"commoninterest" : "Germanistik"
+		}, {
+			"name" : "Addie Rush",
+			"age" : 18,
+			"commoninterest" : "Sport"
+		}, {
+			"name" : "Loraine Black",
+			"age" : 27,
+			"commoninterest" : "Sport"
+		}, {
+			"name" : "Horn Humphrey",
+			"age" : 30,
+			"commoninterest" : "Reisen"
+		}, {
+			"name" : "Rose Mccall",
+			"age" : 19,
+			"commoninterest" : "Sport"
+		}, {
+			"name" : "Pauline Acevedo",
+			"age" : 29,
+			"commoninterest" : "BWL"
+		}, {
+			"name" : "Melinda Leon",
+			"age" : 36,
+			"commoninterest" : "Reisen"
+		}, {
+			"name" : "Combs Evans",
+			"age" : 22,
+			"commoninterest" : "BWL"
+		}, {
+			"name" : "Thiago dos Santos Oliveira",
+			"age" : 25,
+			"commoninterest" : "Reisen"
+		}
+	]
+}, {
+	"links" : [{
+        "source": 5,
+        "target": 2,
+        "value": 2
+      },
+      {
+        "source": 18,
+        "target": 9,
+        "value": 4
+      },
+      {
+        "source": 20,
+        "target": 12,
+        "value": 9
+      },
+      {
+        "source": 5,
+        "target": 1,
+        "value": 5
+      },
+      {
+        "source": 4,
+        "target": 27,
+        "value": 6
+      },
+      {
+        "source": 15,
+        "target": 8,
+        "value": 2
+      },
+      {
+        "source": 16,
+        "target": 23,
+        "value": 8
+      },
+      {
+        "source": 20,
+        "target": 26,
+        "value": 10
+      },
+      {
+        "source": 1,
+        "target": 28,
+        "value": 4
+      },
+      {
+        "source": 6,
+        "target": 22,
+        "value": 6
+      },
+      {
+        "source": 15,
+        "target": 28,
+        "value": 7
+      },
+      {
+        "source": 26,
+        "target": 22,
+        "value": 9
+      },
+      {
+        "source": 5,
+        "target": 1,
+        "value": 7
+      },
+      {
+        "source": 15,
+        "target": 24,
+        "value": 10
+      },
+      {
+        "source": 29,
+        "target": 22,
+        "value": 7
+      },
+      {
+        "source": 25,
+        "target": 23,
+        "value": 1
+      },
+      {
+        "source": 13,
+        "target": 4,
+        "value": 6
+      },
+      {
+        "source": 26,
+        "target": 2,
+        "value": 5
+      },
+      {
+        "source": 25,
+        "target": 27,
+        "value": 4
+      },
+      {
+        "source": 15,
+        "target": 21,
+        "value": 8
+      },
+	  {
+        "source": 30,
+        "target": 4,
+        "value": 7
+      },
+      {
+        "source": 30,
+        "target": 10,
+        "value": 5
+      },
+      {
+        "source": 30,
+        "target": 11,
+        "value": 5
+      },
+      {
+        "source": 30,
+        "target": 5,
+        "value": 2
+      },
+      {
+        "source": 30,
+        "target": 8,
+        "value": 3
+      },
+      {
+        "source": 30,
+        "target": 9,
+        "value": 3
+      },
+      {
+        "source": 30,
+        "target": 24,
+        "value": 2
+      },
+      {
+        "source": 30,
+        "target": 27,
+        "value": 1
+      },
+      {
+        "source": 30,
+        "target": 5,
+        "value": 5
+      },
+      {
+        "source": 30,
+        "target": 23,
+        "value": 8
+      },
+      {
+        "source": 30,
+        "target": 14,
+        "value": 6
+      },
+      {
+        "source": 30,
+        "target": 26,
+        "value": 5
+      },
+      {
+        "source": 30,
+        "target": 24,
+        "value": 6
+      },
+      {
+        "source": 30,
+        "target": 1,
+        "value": 4
+      },
+      {
+        "source": 30,
+        "target": 15,
+        "value": 3
+      },
+      {
+        "source": 30,
+        "target": 9,
+        "value": 7
+      },
+      {
+        "source": 30,
+        "target": 12,
+        "value": 9
+      },
+      {
+        "source": 30,
+        "target": 21,
+        "value": 5
+      },
+      {
+        "source": 30,
+        "target": 25,
+        "value": 9
+      },
+      {
+        "source": 30,
+        "target": 3,
+        "value": 9
+      }
+	]
+}]

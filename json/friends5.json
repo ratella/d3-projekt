@@ -1,0 +1,487 @@
+ {
+    "nodes": [
+      {
+        "name": "Haley Moody",
+        "age": 17,
+        "group": 3,
+        "commoninterest": "Reisen"
+      },
+      {
+        "name": "Grace Gay",
+        "age": 30,
+        "group": 6,
+        "commoninterest": "Party"
+      },
+      {
+        "name": "Aguilar Dunn",
+        "age": 22,
+        "group": 1,
+        "commoninterest": "Germanistik"
+      },
+      {
+        "name": "Curry Jefferson",
+        "age": 22,
+        "group": 2,
+        "commoninterest": "Party"
+      },
+      {
+        "name": "Holcomb Palmer",
+        "age": 33,
+        "group": 5,
+        "commoninterest": "BWL"
+      },
+      {
+        "name": "Horn Cleveland",
+        "age": 33,
+        "group": 4,
+        "commoninterest": "BWL"
+      },
+      {
+        "name": "Chris Bowen",
+        "age": 26,
+        "group": 5,
+        "commoninterest": "Party"
+      },
+      {
+        "name": "Mcguire Pitts",
+        "age": 18,
+        "group": 7,
+        "commoninterest": "BWL"
+      },
+      {
+        "name": "Tia Fisher",
+        "age": 35,
+        "group": 10,
+        "commoninterest": "Portugisisch"
+      },
+      {
+        "name": "Harding Waters",
+        "age": 23,
+        "group": 5,
+        "commoninterest": "Portugisisch"
+      },
+      {
+        "name": "Walters Marsh",
+        "age": 30,
+        "group": 5,
+        "commoninterest": "Reisen"
+      },
+      {
+        "name": "Krista Kramer",
+        "age": 33,
+        "group": 9,
+        "commoninterest": "Sport"
+      },
+      {
+        "name": "Monique Cook",
+        "age": 19,
+        "group": 8,
+        "commoninterest": "Germanistik"
+      },
+      {
+        "name": "Cleveland Hurst",
+        "age": 21,
+        "group": 5,
+        "commoninterest": "Sport"
+      },
+      {
+        "name": "Antonia Davidson",
+        "age": 22,
+        "group": 2,
+        "commoninterest": "Germanistik"
+      },
+      {
+        "name": "Ann Gallagher",
+        "age": 26,
+        "group": 6,
+        "commoninterest": "Sport"
+      },
+      {
+        "name": "Rojas Burks",
+        "age": 17,
+        "group": 2,
+        "commoninterest": "BWL"
+      },
+      {
+        "name": "Rachel Sexton",
+        "age": 28,
+        "group": 2,
+        "commoninterest": "BWL"
+      },
+      {
+        "name": "Adele Ortega",
+        "age": 35,
+        "group": 1,
+        "commoninterest": "Party"
+      },
+      {
+        "name": "Kara Potter",
+        "age": 33,
+        "group": 9,
+        "commoninterest": "Rennrad"
+      },
+      {
+        "name": "Miranda Gillespie",
+        "age": 33,
+        "group": 9,
+        "commoninterest": "Party"
+      },
+      {
+        "name": "Jeanette Medina",
+        "age": 20,
+        "group": 10,
+        "commoninterest": "Sport"
+      },
+      {
+        "name": "Faith Hamilton",
+        "age": 20,
+        "group": 8,
+        "commoninterest": "Portugisisch"
+      },
+      {
+        "name": "Molina Phelps",
+        "age": 21,
+        "group": 8,
+        "commoninterest": "Sport"
+      },
+      {
+        "name": "Rosemary Goodwin",
+        "age": 27,
+        "group": 5,
+        "commoninterest": "Germanistik"
+      },
+      {
+        "name": "Roberson Gordon",
+        "age": 33,
+        "group": 1,
+        "commoninterest": "Rennrad"
+      },
+      {
+        "name": "Eula Dean",
+        "age": 25,
+        "group": 8,
+        "commoninterest": "Rennrad"
+      },
+      {
+        "name": "Benton Atkins",
+        "age": 25,
+        "group": 5,
+        "commoninterest": "Rennrad"
+      },
+      {
+        "name": "Shields Swanson",
+        "age": 22,
+        "group": 4,
+        "commoninterest": "Rennrad"
+      },
+      {
+        "name": "Cobb Greene",
+        "age": 38,
+        "group": 5,
+        "commoninterest": "Party"
+      },{
+			"name" : "Thiago dos Santos Oliveira",
+			"age" : 25,
+			"group": 1,
+			"commoninterest" : "Reisen"
+		}
+    ],
+	
+    "links": [
+	 {
+        "source": 30,
+        "target": 0,
+        "value": 1
+      },
+      {
+        "source": 30,
+        "target": 1,
+        "value": 4
+      },
+      {
+        "source": 30,
+        "target": 2,
+        "value": 2
+      },
+      {
+        "source": 30,
+        "target": 3,
+        "value": 4
+      },
+      {
+        "source": 30,
+        "target": 4,
+        "value": 8
+      },
+      {
+        "source": 30,
+        "target": 5,
+        "value": 5
+      },
+      {
+        "source": 30,
+        "target": 6,
+        "value": 3
+      },
+      {
+        "source": 30,
+        "target": 7,
+        "value": 8
+      },
+      {
+        "source": 30,
+        "target": 8,
+        "value": 4
+      },
+      {
+        "source": 30,
+        "target": 9,
+        "value": 4
+      },
+      {
+        "source": 30,
+        "target": 10,
+        "value": 6
+      },
+      {
+        "source": 30,
+        "target": 11,
+        "value": 8
+      },
+      {
+        "source": 30,
+        "target": 12,
+        "value": 9
+      },
+      {
+        "source": 30,
+        "target": 13,
+        "value": 5
+      },
+      {
+        "source": 30,
+        "target": 14,
+        "value": 9
+      },
+      {
+        "source": 30,
+        "target": 15,
+        "value": 1
+      },
+      {
+        "source": 30,
+        "target": 16,
+        "value": 5
+      },
+      {
+        "source": 30,
+        "target": 17,
+        "value": 2
+      },
+      {
+        "source": 30,
+        "target": 18,
+        "value": 9
+      },
+      {
+        "source": 30,
+        "target": 19,
+        "value": 1
+      },
+      {
+        "source": 30,
+        "target": 20,
+        "value": 9
+      },
+      {
+        "source": 30,
+        "target": 21,
+        "value": 8
+      },
+      {
+        "source": 30,
+        "target": 22,
+        "value": 5
+      },
+      {
+        "source": 30,
+        "target": 23,
+        "value": 8
+      },
+      {
+        "source": 30,
+        "target": 24,
+        "value": 2
+      },
+      {
+        "source": 30,
+        "target": 25,
+        "value": 4
+      },
+      {
+        "source": 30,
+        "target": 26,
+        "value": 2
+      },
+      {
+        "source": 30,
+        "target": 27,
+        "value": 7
+      },
+      {
+        "source": 30,
+        "target": 28,
+        "value": 3
+      },
+      {
+        "source": 30,
+        "target": 29,
+        "value": 10
+      },
+	    {
+        "source": 10,
+        "target": 1,
+        "value": 3
+      },
+      {
+        "source": 28,
+        "target": 2,
+        "value": 1
+      },
+      {
+        "source": 19,
+        "target": 3,
+        "value": 6
+      },
+      {
+        "source": 7,
+        "target": 4,
+        "value": 7
+      },
+      {
+        "source": 29,
+        "target": 5,
+        "value": 7
+      },
+      {
+        "source": 12,
+        "target": 6,
+        "value": 4
+      },
+      {
+        "source": 18,
+        "target": 7,
+        "value": 3
+      },
+      {
+        "source": 17,
+        "target": 8,
+        "value": 3
+      },
+      {
+        "source": 5,
+        "target": 9,
+        "value": 2
+      },
+      {
+        "source": 6,
+        "target": 10,
+        "value": 1
+      },
+      {
+        "source": 3,
+        "target": 11,
+        "value": 6
+      },
+      {
+        "source": 9,
+        "target": 12,
+        "value": 1
+      },
+      {
+        "source": 6,
+        "target": 13,
+        "value": 4
+      },
+      {
+        "source": 8,
+        "target": 14,
+        "value": 10
+      },
+      {
+        "source": 20,
+        "target": 15,
+        "value": 6
+      },
+      {
+        "source": 5,
+        "target": 16,
+        "value": 9
+      },
+      {
+        "source": 29,
+        "target": 17,
+        "value": 1
+      },
+      {
+        "source": 8,
+        "target": 18,
+        "value": 9
+      },
+      {
+        "source": 25,
+        "target": 19,
+        "value": 6
+      },
+      {
+        "source": 12,
+        "target": 20,
+        "value": 2
+      },
+      {
+        "source": 1,
+        "target": 21,
+        "value": 8
+      },
+      {
+        "source": 29,
+        "target": 22,
+        "value": 4
+      },
+      {
+        "source": 5,
+        "target": 23,
+        "value": 6
+      },
+      {
+        "source": 5,
+        "target": 24,
+        "value": 7
+      },
+      {
+        "source": 18,
+        "target": 25,
+        "value": 10
+      },
+      {
+        "source": 1,
+        "target": 26,
+        "value": 2
+      },
+      {
+        "source": 24,
+        "target": 27,
+        "value": 4
+      },
+      {
+        "source": 26,
+        "target": 28,
+        "value": 2
+      },
+      {
+        "source": 9,
+        "target": 29,
+        "value": 7
+      }
+    ]
+}

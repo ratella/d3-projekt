@@ -1,0 +1,337 @@
+[
+  {
+    "name": "Workman Koch",
+    "age": 29,
+    "subjects": [
+      "Portugisisch",
+      "BWL"
+    ],
+    "friends": [
+      "Lakisha Blackwell",
+      "Malinda Frank",
+      "Stefanie Rodgers",
+      "Barry Burks"
+    ]
+  },
+  {
+    "name": "Jeanne Maynard",
+    "age": 19,
+    "subjects": [
+      "Sport",
+      "BWL"
+    ],
+    "friends": [
+      "Terrie Dyer",
+      "Kane Rogers",
+      "Lorna Jimenez"
+    ]
+  },
+  {
+    "name": "Sparks Blevins",
+    "age": 19,
+    "subjects": [
+      "Germanistik",
+      "Sport"
+    ],
+    "friends": [
+      "Mcfadden Booker",
+      "Osborn Middleton",
+      "Vivian Freeman",
+      "Lori Atkins"
+    ]
+  },
+  {
+    "name": "Fry Hubbard",
+    "age": 36,
+    "subjects": [
+      "Germanistik",
+      "Portugisisch"
+    ],
+    "friends": [
+      "Lott Montgomery",
+      "Woods Solis",
+      "Rasmussen Meyers"
+    ]
+  },
+  {
+    "name": "Park Rodriguez",
+    "age": 24,
+    "subjects": [
+      "Germanistik",
+      "Sport"
+    ],
+    "friends": [
+      "Jacobs Gibbs",
+      "Osborne Patrick",
+      "Solis Dawson",
+      "Carolyn Branch",
+      "Cash Pugh",
+      "Jeannie Henry",
+      "Beth Rowland",
+      "Ellis Duran"
+    ]
+  },
+  {
+    "name": "Tisha Montoya",
+    "age": 22,
+    "subjects": [
+      "Germanistik",
+      "BWL"
+    ],
+    "friends": [
+      "Navarro Vincent",
+      "Mosley Carpenter",
+      "Tiffany Adams",
+      "Brianna Webster",
+      "Bowman Puckett",
+      "John Pollard",
+      "Kellie Combs",
+      "Shepard Mathews"
+    ]
+  },
+  {
+    "name": "Huff Pate",
+    "age": 30,
+    "subjects": [
+      "Germanistik",
+      "Germanistik"
+    ],
+    "friends": [
+      "Allison Sweet",
+      "Wilkinson King",
+      "Kayla Burnett",
+      "Katina Olsen",
+      "Butler Fletcher",
+      "Alexander Harper",
+      "Anita Oconnor",
+      "Rush Guthrie",
+      "Howe Heath",
+      "Galloway Frost",
+      "Dana Warner"
+    ]
+  },
+  {
+    "name": "Peggy Blake",
+    "age": 31,
+    "subjects": [
+      "Portugisisch",
+      "BWL"
+    ],
+    "friends": [
+      "Frost Kramer",
+      "Le Craig",
+      "Morrow Todd",
+      "Dona Joyce",
+      "Lyons Alvarado",
+      "Antoinette Brooks"
+    ]
+  },
+  {
+    "name": "Franks Good",
+    "age": 23,
+    "subjects": [
+      "Portugisisch",
+      "Portugisisch"
+    ],
+    "friends": [
+      "Lindsay Pitts",
+      "Miranda Warren",
+      "Preston Crosby",
+      "Zamora Woodward",
+      "Lucille Cardenas"
+    ]
+  },
+  {
+    "name": "Jerry Burke",
+    "age": 34,
+    "subjects": [
+      "Sport",
+      "Portugisisch"
+    ],
+    "friends": [
+      "Vera Pratt",
+      "Tracy Beach",
+      "Madge Mcguire",
+      "Tabatha Banks",
+      "Justice Buchanan",
+      "Bridges Townsend",
+      "Velazquez Hunt",
+      "Parsons Powell",
+      "Calderon Foster",
+      "Dorothy Humphrey"
+    ]
+  },
+  {
+    "name": "Lacey Sanders",
+    "age": 26,
+    "subjects": [
+      "Sport",
+      "Portugisisch"
+    ],
+    "friends": [
+      "Grant Parks",
+      "Nancy Mendez",
+      "Brewer Mills",
+      "Stout Raymond"
+    ]
+  },
+  {
+    "name": "Duncan Morin",
+    "age": 35,
+    "subjects": [
+      "BWL",
+      "BWL"
+    ],
+    "friends": [
+      "Sutton Ochoa",
+      "Frank Lucas",
+      "Carrillo Hendrix"
+    ]
+  },
+  {
+    "name": "Mooney Daniels",
+    "age": 28,
+    "subjects": [
+      "Portugisisch",
+      "Portugisisch"
+    ],
+    "friends": [
+      "Jill Mack",
+      "Harper Rosario",
+      "Oneill Cain",
+      "Castillo Parker",
+      "Heidi Thomas",
+      "Robinson Harding",
+      "Mamie Cervantes",
+      "Graciela Estes",
+      "Alvarez Riley"
+    ]
+  },
+  {
+    "name": "Hancock Tucker",
+    "age": 28,
+    "subjects": [
+      "BWL",
+      "Germanistik"
+    ],
+    "friends": [
+      "Lee Dominguez",
+      "Cherry Dejesus",
+      "Ashley Duffy",
+      "Maritza Potts",
+      "Wilma Tyler",
+      "Lucas Bradshaw",
+      "Adela Patton"
+    ]
+  },
+  {
+    "name": "Stephens Barron",
+    "age": 37,
+    "subjects": [
+      "Portugisisch",
+      "Portugisisch"
+    ],
+    "friends": [
+      "Katelyn Gilliam",
+      "Roberson Lott",
+      "Rosie Quinn"
+    ]
+  },
+  {
+    "name": "Carmella Reynolds",
+    "age": 19,
+    "subjects": [
+      "BWL",
+      "BWL"
+    ],
+    "friends": [
+      "Hopkins Hooper",
+      "Jamie Merrill",
+      "Frances Mercado",
+      "Janelle Marquez",
+      "Karina Allison",
+      "Kirk Head",
+      "Imogene Hodges",
+      "Arlene Nolan"
+    ]
+  },
+  {
+    "name": "Steele Norman",
+    "age": 26,
+    "subjects": [
+      "Germanistik",
+      "Sport"
+    ],
+    "friends": [
+      "Phoebe Campbell",
+      "Leanna Abbott",
+      "Daniels Barlow",
+      "Latisha Battle"
+    ]
+  },
+  {
+    "name": "Valerie Bass",
+    "age": 23,
+    "subjects": [
+      "Sport",
+      "Sport"
+    ],
+    "friends": [
+      "Schultz Everett",
+      "Wyatt Berg",
+      "Estela Donaldson"
+    ]
+  },
+  {
+    "name": "Joseph Deleon",
+    "age": 35,
+    "subjects": [
+      "Sport",
+      "Portugisisch"
+    ],
+    "friends": [
+      "Fanny Hays",
+      "Claire Murphy",
+      "Lindsay Pennington",
+      "Meyer Knight",
+      "Flynn Ramirez",
+      "Josie Rutledge"
+    ]
+  },
+  {
+    "name": "Hensley Lowe",
+    "age": 30,
+    "subjects": [
+      "BWL",
+      "BWL"
+    ],
+    "friends": [
+      "Washington Griffith",
+      "Velma Blanchard",
+      "Durham Dickerson",
+      "King Pena",
+      "Witt Pacheco",
+      "Powers Meadows"
+    ]
+  },
+  {
+    "name": "Kristy Stone",
+    "age": 27,
+    "subjects": [
+      "Sport",
+      "Sport"
+    ],
+    "friends": [
+      "Erna Walters",
+      "Janet Rocha",
+      "Agnes Pace",
+      "Lily Hudson",
+      "Heather Diaz",
+      "Hall Carson",
+      "Katharine Kinney",
+      "Georgina Swanson",
+      "Tamra Hester",
+      "Alisa Spence"
+    ]
+  }
+]

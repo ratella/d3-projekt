@@ -1,0 +1,265 @@
+[
+   {
+    "friends": [
+      {
+        "name": "Kirkland.Morgan",
+        "age": 21,
+        "commoninterest": "Reisen"
+      },
+      {
+        "name": "Arlene.Conrad",
+        "age": 27,
+        "commoninterest": "Portugisisch"
+      },
+      {
+        "name": "Rosella.Franco",
+        "age": 37,
+        "commoninterest": "Germanistik"
+      },
+      {
+        "name": "Delgado.Martinez",
+        "age": 21,
+        "commoninterest": "Sport"
+      },
+      {
+        "name": "Hendricks.Harrell",
+        "age": 38,
+        "commoninterest": "Portugisisch"
+      },
+      {
+        "name": "Nell.Gilmore",
+        "age": 19,
+        "commoninterest": "BWL"
+      },
+      {
+        "name": "Corrine.Navarro",
+        "age": 25,
+        "commoninterest": "Party"
+      },
+      {
+        "name": "Etta.Rocha",
+        "age": 19,
+        "commoninterest": "BWL"
+      },
+      {
+        "name": "Bryant.Page",
+        "age": 33,
+        "commoninterest": "Reisen"
+      },
+      {
+        "name": "Louise.Shields",
+        "age": 24,
+        "commoninterest": "Sport"
+      },
+      {
+        "name": "Goodman.Ellis",
+        "age": 36,
+        "commoninterest": "Sport"
+      },
+      {
+        "name": "Lowe.Beard",
+        "age": 36,
+        "commoninterest": "Party"
+      },
+      {
+        "name": "Sherrie.Woodward",
+        "age": 25,
+        "commoninterest": "Rennrad"
+      },
+      {
+        "name": "Leona.Nguyen",
+        "age": 34,
+        "commoninterest": "BWL"
+      },
+      {
+        "name": "Lawson.Mcneil",
+        "age": 34,
+        "commoninterest": "Reisen"
+      },
+      {
+        "name": "Tara.Morin",
+        "age": 36,
+        "commoninterest": "Party"
+      },
+      {
+        "name": "Moses.Mccray",
+        "age": 26,
+        "commoninterest": "Portugisisch"
+      },
+      {
+        "name": "Gill.Rodriquez",
+        "age": 24,
+        "commoninterest": "Germanistik"
+      },
+      {
+        "name": "Craft.Browning",
+        "age": 21,
+        "commoninterest": "Germanistik"
+      },
+      {
+        "name": "Monroe.Church",
+        "age": 17,
+        "commoninterest": "Sport"
+      },
+      {
+        "name": "Rosalie.Pate",
+        "age": 31,
+        "commoninterest": "Sport"
+      },
+      {
+        "name": "Kristie.Rowland",
+        "age": 24,
+        "commoninterest": "Portugisisch"
+      },
+      {
+        "name": "Ilene.Frank",
+        "age": 34,
+        "commoninterest": "Reisen"
+      },
+      {
+        "name": "Angela.Richmond",
+        "age": 18,
+        "commoninterest": "Sport"
+      },
+      {
+        "name": "Hayden.Sampson",
+        "age": 17,
+        "commoninterest": "Germanistik"
+      },
+      {
+        "name": "Madden.Giles",
+        "age": 17,
+        "commoninterest": "BWL"
+      },
+      {
+        "name": "Hester.Key",
+        "age": 17,
+        "commoninterest": "Reisen"
+      },
+      {
+        "name": "Tracie.Lawson",
+        "age": 37,
+        "commoninterest": "Portugisisch"
+      },
+      {
+        "name": "Mooney.Freeman",
+        "age": 21,
+        "commoninterest": "Sport"
+      },
+      {
+        "name": "Mercedes.Morton",
+        "age": 25,
+        "commoninterest": "BWL"
+      },
+	  {
+			"name" : "Thiago dos Santos Oliveira",
+			"age" : 25,
+			"commonintersest": "Reisen"
+		}	
+    ]
+  },
+  {
+    "links": [
+      {
+        "source": 31,
+        "target": 4,
+        "value": "Reisen"
+      },
+      {
+        "source": 31,
+        "target": 27,
+        "value": "Germanistik"
+      },
+      {
+        "source": 31,
+        "target": 10,
+        "value": "Portugisisch"
+      },
+      {
+        "source": 31,
+        "target": 5,
+        "value": "Germanistik"
+      },
+      {
+        "source": 31,
+        "target": 1,
+        "value": "Reisen"
+      },
+      {
+        "source": 31,
+        "target": 27,
+        "value": "Sport"
+      },
+      {
+        "source": 31,
+        "target": 16,
+        "value": "Rennrad"
+      },
+      {
+        "source": 31,
+        "target": 26,
+        "value": "Sport"
+      },
+      {
+        "source": 31,
+        "target": 5,
+        "value": "Rennrad"
+      },
+      {
+        "source": 31,
+        "target": 18,
+        "value": "Rennrad"
+      },
+      {
+        "source": 31,
+        "target": 24,
+        "value": "BWL"
+      },
+      {
+        "source": 31,
+        "target": 9,
+        "value": "Germanistik"
+      },
+      {
+        "source": 31,
+        "target": 13,
+        "value": "Rennrad"
+      },
+      {
+        "source": 31,
+        "target": 26,
+        "value": "Reisen"
+      },
+      {
+        "source": 31,
+        "target": 16,
+        "value": "Reisen"
+      },
+      {
+        "source": 31,
+        "target": 30,
+        "value": "Germanistik"
+      },
+      {
+        "source": 31,
+        "target": 23,
+        "value": "Reisen"
+      },
+      {
+        "source": 31,
+        "target": 11,
+        "value": "Rennrad"
+      },
+      {
+        "source": 31,
+        "target": 1,
+        "value": "Rennrad"
+      },
+      {
+        "source": 31,
+        "target": 27,
+        "value": "Party"
+      }
+    ]
+  }
+]
