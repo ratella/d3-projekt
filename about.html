@@ -116,6 +116,8 @@
 					  var link = svg.selectAll(".link")
 						  .data(json.links)
 						.enter().append("line")
+						 .style("stroke-width", 3)
+						 .style("stroke", "green")
 						  .attr("class", "link");
 
 					  var node = svg.selectAll(".node")
